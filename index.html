@@ -8,6 +8,120 @@
     </head>
 
     <body>
+        <nav id="home">
+            <header>
+                <div class="logoIcon"></div>
+            </header>
 
+            <section class="nav-container">
+                <a href="#home" class="nav-item">Home</a>
+                <a href="#our-profile" class="nav-item">Our Profile</a>
+                <a href="#selection" class="nav-item">House Selection</a>
+                <a href="#message-us" class="nav-item">Message Us</a>
+            </section>
+        </nav>
+        <hr/>
+
+        <main>
+            <article>
+                <header class="greeting">
+                    <h1>Hi <span id="name">User</span>. Welcome To Dunphy's Houses & Magics!</h1>
+                </header> 
+
+                <p id="visi-misi">Ini adalah website latihan pertama</p>
+
+                <div class="background-img"></div>
+            </article>
+
+            <hr/>
+
+            <section id="our-profile">
+                <header>
+                    <h1>Our Profile</h1>
+                </header>
+
+                <section class="profile-container">
+                    <div class="profile-item">
+                        <div class="profile-img-1"></div>
+                        <h2>Founder</h2>
+                    </div>
+    
+                    <div class="profile-item">
+                        <div class="profile-img-2"></div>
+                        <h2>Co-Founder</h2>
+                    </div>
+    
+                    <div class="profile-item">
+                        <div class="profile-img-3"></div>
+                        <h2>Software Engineer</h2>
+                    </div>
+
+                    <div class="profile-item">
+                        <div class="profile-img-4"></div>
+                        <h2>Partner</h2>
+                    </div>
+                </section>
+            </section>
+
+            <hr />
+            <section id="message-us">
+                <header>
+                    <h1 class="pesanOrang">Message Us</h1>
+                </header>
+
+                <section class="form-and-box">
+                    <form name="message-form" onsubmit="return validateForm()">
+                        <div class="sama">
+                            <label for="name">Nama : </label>
+                            <input placeholder="Nama" required type="text" id="nama" name="fullName" />
+                        </div>
+                       
+                        <div class="sama">
+                            <label for="tanggalLahir">Tanggal Lahir : </label>
+                            <input name="birthDate" id="tanggalLahir" required type="date">
+                            <br/>
+                        </div>
+                        
+                        <div class="sama">
+                            <label for="gender">Jenis Kelamin   : </label>
+                            <input type="radio" id="male" name="gender" value="male">
+                            <label for="male">Laki-Laki</label>
+                            <input type="radio" id="female" name="gender" value="female">
+                            <label for="female">Perempuan</label>
+                            <br/>
+                        </div>
+    
+                        <div class="beda">
+                            <label for="pesan">Pesan    : </label> 
+                            <textarea placeholder="Pesan" name="messages" id="pesan"></textarea>
+                            <br/>
+                     
+                        </div>
+                            
+                        <div>
+                            <button type="button" id="submit">Submit</button>
+                        </div>
+                    </form>
+    
+                    <div class="box-samping">
+                        <label for="currentTime">Current Time:</label> <input type="datetime-local" id="waktu">
+                        <br />
+
+                        <p>Nama: <span id="senderFullName"></span></p>
+                        <p>Tanggal Lahir: <span id="senderBirthDate"></span></p>
+                        <p>Jenis Kelamin: <span id="senderGender"></span></p>
+                        <p>Pesan: <span id="senderMessages"></span></p>
+                    </div>
+                </section>
+            </section>
+            
+        </main>
+
+        <hr />
+        <footer>
+            <p>Made by Putri</p>
+        </footer>
+
+        <script src="js/script.js"></script>
     </body>
 </html>

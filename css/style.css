@@ -1,1 +1,225 @@
 /*ini css*/
+nav{
+    background-color: turquoise;
+    border-radius: 10px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-container{
+    display: flex;
+    margin-right: 30px;
+}
+
+.nav-item{
+    border: 1px solid;
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 11px;
+    border-radius: 10px;
+    width: 110px;
+    text-align: center;
+}
+
+.logoIcon{
+    height: 52px;
+    width: 52px;
+    background-image: url(https://i.pinimg.com/564x/b5/2b/b0/b52bb093373de370ad24f65395912f57.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    margin-left: 30px;
+}
+
+.greeting{
+    margin-block-end: 0;
+    margin-block-start: 0;
+}
+
+#visi-misi{
+    margin-block-start: 6px;
+    margin-block-end: 10px;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+
+.background-img{
+    height: 500px;
+    background-image: url(https://images.unsplash.com/photo-1580587771525-78b9dba3b914?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.profile-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.profile-item{
+    height: 150px;
+    text-align: -webkit-center;
+}
+
+.profile-img-1{
+    height: 110px;
+    background-image: url(https://i.pinimg.com/564x/58/cd/a7/58cda7cf8a733a85af5a0e2c56351522.jpg);
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    border-radius: 85%;
+    width: 110px;
+}
+
+.profile-img-2{
+    height: 110px;
+    background-image: url(https://i.pinimg.com/564x/e5/7d/7c/e57d7c9aeabf75928ce82b731c001728.jpg);
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    border-radius: 85%;
+    width: 110px;
+}
+
+.profile-img-3{
+    height: 110px;
+    background-image: url(https://i.pinimg.com/564x/04/68/5c/04685cc43006be81203b5f7dca3301e3.jpg);
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    border-radius: 85%;
+    width: 110px;   
+}
+
+.profile-img-4{
+    height: 110px;
+    background-image: url(https://i.pinimg.com/564x/e5/ff/ba/e5ffbae3a8dae571bfc1eb6c6f4fa24a.jpg);
+    background-size: cover;
+    background-position-x: 1px;
+    display: flex;
+    border-radius: 85%;
+    width: 110px;
+}
+
+h2{
+    margin-block-start: 0;
+}
+
+footer{
+    text-align: end;
+}
+
+.form-and-box{
+    height: 310px;
+    margin-left: 53px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0em;
+    margin-left: 25px;
+}
+
+#your-form{
+    margin-left: 76px;
+    margin-top: 45px;
+    margin-bottom: 45px;
+    font-size: 16px;
+}
+
+.pesanOrang{
+    margin-left: 75px;
+    margin-block-start: 1.5em;
+    margin-block-end: 0.5em;
+    font-size: 30px;
+}
+
+.sama{
+    margin-top: 10px;
+    display: flex;
+}
+
+.beda{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 10px;
+}
+
+#nama{
+    padding-block: 0;
+    padding-inline: 0;
+    border-radius: 4px;
+    border: 1px solid;
+    width: 350px;
+    color: black;
+    height: 30px;
+    margin-left: 62px
+}
+
+#tanggalLahir{
+    padding-block: 0;
+    padding-inline: 0;
+    border-radius: 4px;
+    border: 1px solid;
+    width: 350px;
+    color: black;
+    height: 30px;
+    margin-left: 12px;
+}
+
+#pesan{
+    margin-left: 62px;
+    height: 100px;
+    width: 350px;
+    padding-block: 0;
+    padding-inline: 0;
+    border-radius: 4px;
+    border: 1px solid;
+    color: black;
+}
+
+#submit{
+    width: 462px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid;
+    color: black;
+    margin-top: 15px; 
+}
+
+.box-samping{
+    border: 1px solid;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 600px;
+    width: 570px;
+    margin-top: -260px;
+    height: 200px;
+    font-size: 16px;
+    font-weight: bold;
+    padding-block-start: 25px;
+    padding-left: 15px;
+}
+
+#waktu{
+    margin-block-start: 0em;
+    margin-left: 15px;
+}
+
+p{
+    display: block;
+    margin-block-start: 5px;
+    margin-block-end: 5px;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+
+
