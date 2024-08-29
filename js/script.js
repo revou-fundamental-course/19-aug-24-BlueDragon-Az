@@ -2,28 +2,36 @@ function replaceName() {
     var name = prompt("Hey there! What's your name?", "");
     document.getElementById("name").innerHTML = name
 }
-
 replaceName();
 
-function validateForm() {
-    const name = document.forms["message-form"]["fullName"].value;
-    const birthDate = document.forms["message-form"]["birthDate"].value;
-    const gender = document.forms["message-form"]["gender"].value;
-    const messages = document.forms["message-form"]["messages"].value;
+const form = document.getElementById("myForm");
+const outputNama = document.getElementById("outputNama");
+const outputEmail = document.getElementById("outputEmail");
+const outputPesan = document.getElementById("outputPesan");
+
+form.addEventListener("submit", function(event) {
+    event.preventDefault(); // Mencegah formulir dikirim
+    const nama = document.getElementById("nama").value;
+    const email = document.getElementById("email").value;
+    const pesan = document.getElementById("pesan").value;
     
-    if (name == "" || birthDate == "" || gender == "" || messages =="") {
-        alert("Please fill all field.");
-        return false;
-    }
+    outputNama.textContent = nama;
+    outputEmail.textContent = email;
+    outputPesan.textContent = pesan;
+    
+    // Tampilkan div #formOutput
+    document.getElementById("formOutput").style.display = "block";
 
-    setSenderUI(name, birthDate, gender, messages);
+    document.getElementById("nama").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("pesan").value = "";
+});
 
-    return false;
+let indexSlide = 1;
+showBanner(1);
+
+function nextSlide(n){
+    showBanner (indexSlide += n);
 }
 
-function setSenderUI(name, birthDate, gender, message) {
-    document.getElementById("senderFullName").innerHTML = name;
-    document.getElementById("senderBirthDate").innerHTML = birthDate;
-    document.getElementById("senderGender").innerHTML = gender;
-    document.getElementById("senderMessages").innerHTML = messages;
-}
+
